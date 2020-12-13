@@ -6,6 +6,7 @@ const UserContext = React.createContext();
 class UserProvider extends React.Component {
   state = {
     users: [],
+    isLoaded:false
   }
 
 
@@ -14,7 +15,8 @@ class UserProvider extends React.Component {
       .then(res=>res.json())
       .then(users=> {
         this.setState({
-          users:users
+          users:users,
+          isLoaded:true
         })
       })
   }
@@ -25,7 +27,6 @@ class UserProvider extends React.Component {
         ...this.state,
       }}>
       {this.props.children}
-
       </UserContext.Provider>
     )
   }
