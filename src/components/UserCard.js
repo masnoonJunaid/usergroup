@@ -9,10 +9,11 @@ class UserCard extends React.Component{
           {value=> {
             const {Image, name, id} = this.props.user;
             return (
-                <div className="div-card">
+                <CardStyle className="div-card">
+
                   <img className="prof-img" alt="profile" src={Image} key={id}/>
                   <p className="name">{name}</p>
-                </div>
+                </CardStyle>
             )
           }}
         </UserConsumer>
@@ -27,22 +28,27 @@ const CardStyle = styled.div`
 
 .name{
   background-color:#5798EB;
-  width:100px;
-  height:7vh;
+  border-radius:0 0 8px 8px;
+  height:5vh;
 }
 
 .div-card{
     margin:30px;
-    width:20%;
+    max-width:100%;
+    text-align:center;
+    width:140px;
     border-radius:4%;
     background-color:#393939;
 
 }
 
 .prof-img{
-  height:100px;
-  background-size:cover;
-  border-radius:10px;
+  height:18vh;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  width:100%;
+  border-radius:8px 8px 0 0;
 }
 `
 

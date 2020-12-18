@@ -17,7 +17,9 @@ function CreateGroup(){
       </li>
       <li className="element-list">
         <form className="input-form">
+          <label className="label-text-mob" for="name">Name</label>
           <input className="input-ele" type="text"id="name" placeholder="group name"/>
+          <label className="label-text-mob" for="desc">Description</label>
           <input className="input-ele" type="text"id="desc" placeholder="group description"/>
         </form>
       </li>
@@ -52,7 +54,7 @@ const CreateStyles = styled.div`
 .input-ele{
   margin:8%;
   height:6vh;
-  width:80%;
+  width:100%;
   border-radius:18px;
   background-color:#1A1F22;
   border-style: groove;
@@ -82,6 +84,50 @@ const CreateStyles = styled.div`
 .group-upload{
   display:inline-flex;
   margin-left:50px;
+}
+/**
+Responsive Breakpoints
+**/
+
+@media screen and (min-width:550px) and (max-width:810px){
+  .element-list{
+    display:block;
+    width:28%;
+    margin:2%;
+
+  }
+}
+
+
+.label-text-mob{
+  display:none;
+}
+@media screen and (min-width:320px) and (max-width:549px){
+  .create-list{
+    display:block;
+    margin:4%;
+  }
+  .group-img{
+    border-radius:10px;
+    height:120px;
+  }
+.element-list{
+  width:65%;
+  margin:1%;
+}
+
+.label-text{
+  display:none;
+}
+
+.label-text-mob{
+  display:block;
+  color:lightgrey;
+  font-family:Roboto,italic;
+  margin-right:80px;
+}
+}
+
 `
 
 export default CreateGroup

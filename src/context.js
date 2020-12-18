@@ -21,6 +21,10 @@ class UserProvider extends React.Component {
       })
   }
 
+  handleClick = ()  => {
+
+  }
+
   render(){
     return (
       <UserContext.Provider value={{

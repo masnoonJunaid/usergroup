@@ -20,8 +20,10 @@ function App() {
       }}
       </UserConsumer>
       </div>
+      <ul className="button-list">
         <button id="update" className="buttons">Update</button>
         <button id="remove" className="buttons">Remove</button>
+      </ul>
     </div>
   );
 }
