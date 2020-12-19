@@ -1,3 +1,82 @@
+Hackerearth.com Caavo UI Developer Hiring Challenge - 2020 , Challenge was to create a responsive Usergroup application that let you select users,  fetched from data provided and create group with selected Users. For more info visit https://assessment.hackerearth.com/challenges/hiring/caavo-ui-developer-hiring-challenge-2020/?utm_source=satellite&utm_campaign=caavo-ui-developer-hiring-challenge-2020&utm_medium=link&rem-web=1
+
+
+## Top Feature
+* Site is  responsive on mobile, Tablet, Desktop and other devices of different screen Sizes.
+* Create group with fetched User profile from json data .
+
+
+
+
+### Run this with localhost
+1  `npm install`
+2  `npm start`
+
+## What is inside this
+```bash
+
+├── .git
+├──Public # folder
+├──src
+      ├──components
+          ├──CreateGroup.js # React component
+          ├──UserCard.js # React component
+      ├──App.css # this file contains styles/css for some of root elements
+      ├──App.js
+      ├──App.test.js
+      ├──context.js # file responsible for data flow from top to bottom throughout different components, also contains logics, function for data manipulation
+      ├──index.css
+      ├──index.js
+      ├──logo.svg #useless
+      ├──resportWebVitals.js
+      ├──setupTests.js
+├── .eslintcache
+├── .gitignore
+├── README.md #You are reading right Now 😊😊
+├── package-lock.json
+├── package.json
+├── yarn.lock
+
+```
+# Contribution
+* It's a complete and personal project. No need to contribute.
+
+
+
+#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
