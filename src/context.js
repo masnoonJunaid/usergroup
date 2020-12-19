@@ -19,16 +19,34 @@ class UserProvider extends React.Component {
           isLoaded:true
         })
       })
+  };
+
+  getCard = (id) => {
+    const card = this.state.users.find(card => card.id === id)
+    return card
   }
 
-  handleClick = ()  => {
+  selectUser = (id)  => {
 
-  }
+
+    let card =   document.querySelectorAll('.select')
+    card[4].classList.toggle('toggle-select')
+    card[3].classList.toggle('toggle-select')
+    card[1].classList.toggle('toggle-select')
+    card[0].classList.toggle('toggle-select')
+    // card.forEach( c=> {
+    //   c.classList.toggle('toggle-select')
+    // })
+    // card.classList.toggle('toggle-select')
+    //   console.log("I am working fine")
+    }
+
 
   render(){
     return (
       <UserContext.Provider value={{
         ...this.state,
+        selectUser:this.selectUser
       }}>
       {this.props.children}
       </UserContext.Provider>
